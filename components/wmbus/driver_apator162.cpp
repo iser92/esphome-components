@@ -246,7 +246,7 @@ namespace
 
     void Driver::processExtras(string miExtras)
     {
-        map<string,string> extras;
+        std::map<string,string> extras;
         bool ok = parseExtras(miExtras, &extras);
         if (!ok)
         {
