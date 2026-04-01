@@ -93,7 +93,7 @@ WMBUS_MQTT_SCHEMA = cv.Schema({
     cv.GenerateID(CONF_WMBUS_MQTT_ID):        cv.declare_id(MqttClient),
     cv.Required(CONF_USERNAME):               cv.string_strict,
     cv.Required(CONF_PASSWORD):               cv.string_strict,
-    cv.Required(CONF_BROKER):                 cv.ipv4address,
+    cv.Required(CONF_BROKER):                 cv.ipv4,
     cv.Optional(CONF_PORT,    default=1883):  cv.port,
     cv.Optional(CONF_RETAIN,  default=False): cv.boolean,
 })
